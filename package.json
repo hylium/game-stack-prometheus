@@ -1,0 +1,22 @@
+{
+  "name": "game-stack-prometheus",
+  "version": "0.1.0",
+  "description": "Data storage plugin for GameStack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hylium/game-stack-prometheus.git"
+  },
+  "author": "Benjamin Delamarre (d34thwings@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hylium/game-stack-prometheus/issues"
+  },
+  "homepage": "https://github.com/hylium/game-stack-prometheus",
+  "dependencies": {
+
+  }
+}
