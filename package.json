@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/hylium/game-stack-prometheus",
   "dependencies": {
-    "game-stack-object": "git+https://github.com/hylium/game-stack-object.git"
+    "game-stack-object": "git+https://github.com/hylium/game-stack-object.git",
+    "lodash": "^2.4.1",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.1"
   }
 }
