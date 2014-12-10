@@ -1,6 +1,6 @@
 'use strict';
 
-var Prometheus = require('./../lib/prometheus'), assert = require('assert');
+var Prometheus = require('./../lib/prometheus'), assert = require('assert'), conf = require('./config');
 
 describe('Prometheus', function() {
   describe('#attributes', function() {

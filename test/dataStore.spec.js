@@ -1,6 +1,6 @@
 'use strict';
 
-var DataStore = require('./../lib/dataStore'), assert = require('assert'), _ = require('lodash'),
+var DataStore = require('./../lib/datastore'), assert = require('assert'), _ = require('lodash'),
   conf = require('./config').connectorConf;
 
 describe('DataStore', function() {
@@ -9,7 +9,7 @@ describe('DataStore', function() {
       var dataStore = new DataStore({
         databases: {test: _.merge({connector: 'mongodb'}, conf)}
       });
-      assert(dataStore.databases.test);
+      assert(dataStore.$$databases.test);
     });
   });
 
