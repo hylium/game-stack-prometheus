@@ -8,7 +8,8 @@
       <table class="table">
         <thead>
         <tr>
-          <th>Database name</th>
+          <th></th>
+          <th>Name</th>
           <th>Connector</th>
           <th>Host</th>
         </tr>
@@ -16,6 +17,13 @@
         <tbody>
         {{#each prometheus.databases}}
           <tr>
+            <td class="text-center">
+              {{#if connector.online}}
+                <span class="bullet online"></span>
+              {{else}}
+                <span class="bullet offline"></span>
+              {{/if}}
+            </td>
             <td>{{name}}</td>
             <td>{{connector.name}}</td>
             <td>{{connector.host}}</td>

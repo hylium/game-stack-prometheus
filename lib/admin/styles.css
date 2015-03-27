@@ -1,0 +1,15 @@
+.bullet {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #b6b6b6;
+}
+
+.bullet.online {
+  background: #00A000;
+}
+
+.bullet.offline {
+  background: #A00000;
+}
