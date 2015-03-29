@@ -5,7 +5,7 @@ var Prometheus = require('./../lib/prometheus'), assert = require('assert'), con
 describe('Prometheus', function() {
   describe('#attributes', function() {
     it('should contain plugin name', function() {
-      assert((new Prometheus()).attributes.name === 'prometheus');
+      assert(Prometheus.register.attributes.name === 'prometheus');
     });
   });
 

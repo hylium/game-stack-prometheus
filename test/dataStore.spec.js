@@ -27,13 +27,15 @@ describe('DataStore', function() {
       });
     });
 
-    it('should throw if a connection fails', function(done) {
+    it('should continue if a connection fails', function(done) {
       var dataStore = new DataStore({
         databases: {test2: _.merge(conf, {connector: 'mongodb', hostname: 'invalid host name'})}
       });
       dataStore.connect().then(function() {
-        done(new Error('This should have failed'));
+        assert(true);
+        done();
       }, function() {
+        assert(false);
         done();
       });
     });

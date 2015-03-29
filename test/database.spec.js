@@ -7,7 +7,7 @@ describe('Database', function() {
   describe('#init', function() {
     it('should create a connector from config', function() {
       var database = new Database(_.merge({connector: 'mongodb'}, conf));
-      assert(typeof database.connector === 'object');
+      assert(typeof database.$$connector === 'object');
     });
   });
 });

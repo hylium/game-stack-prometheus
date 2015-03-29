@@ -19,7 +19,7 @@
   "dependencies": {
     "game-stack-object": "git+https://github.com/hylium/game-stack-object.git",
     "lodash": "^2.4.1",
-    "mongoose": "^3.8.20",
+    "mongoose": "^4.0.1",
     "q": "^1.1.2"
   },
   "devDependencies": {
